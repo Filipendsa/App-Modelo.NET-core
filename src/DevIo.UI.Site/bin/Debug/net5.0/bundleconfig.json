@@ -15,7 +15,7 @@
     ]
   },
   {
-    "outputFileName": "wwwroot/lib/bootstrap/boot.min.js",
+    "outputFileName": "wwwroot/lib/bootstrap/bootstrap.min.js",
     "inputFiles": [
       "wwwroot/lib/bootstrap/js/bootstrap.js"
     ]

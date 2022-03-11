@@ -15,5 +15,6 @@ namespace DevIo.UI.Site.Models
         public String Nome { get; set; }
         public String Email { get; set; }
         public DateTime DataNascimento { get; set; }
+
     }
 }
