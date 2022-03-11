@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj": {}
+    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj": {
+    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj",
+        "projectUniqueName": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj",
         "projectName": "DevIo.UI.Site",
-        "projectPath": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj",
+        "projectPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\DevIo.UI.Site.csproj",
         "packagesPath": "C:\\Users\\filipe.nogueira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\obj\\",
+        "outputPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\Bundling-Minification\\src\\DevIo.UI.Site\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\filipe.nogueira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.15, )"
             },

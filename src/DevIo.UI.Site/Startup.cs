@@ -3,6 +3,7 @@ using DevIo.UI.Site.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -15,11 +16,13 @@ namespace DevIo.UI.Site
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-        public IConfiguration Configuration { get; }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -32,6 +35,10 @@ namespace DevIo.UI.Site
                 options.AreaViewLocationFormats.Add("/Modulos/Shared/{0}.cshtml");
 
             });
+
+            services.AddDbContext<MeuDbContext>(options=> 
+            options.UseSqlServer(Configuration.GetConnectionString("MeuDbContext")));
+
             services.AddControllersWithViews();
             //services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
 
